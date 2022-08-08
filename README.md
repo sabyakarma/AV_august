@@ -86,4 +86,12 @@ sample_submission.csv contains 2 variables - `campaign id` and `click_rate`
 
 ## Evaluation metric
 
-The evaluation metric for this hackathon would be `r2_score`
+The evaluation metric for this hackathon would be `r2_score` and `RMSE`
+
+# Approach
+- Check for Null values and describe the data
+- Perform EDA on target vaiable and Indipendent variables
+- Check for Catagorical, Ordinal and Contineous variables and perform respective EDA
+- Create data processing pipeline - with frequency encoder for categorical variables and scale the data
+- Create GridSearchCV with estimator as RandomForest Model
+- Use estimator as `RMSE` and `r2_score` as scoring metrics
